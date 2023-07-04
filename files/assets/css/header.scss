@@ -13,5 +13,12 @@
 
 .header-left {
   padding-top: 80px;
-
+  .logo-header {
+    a {
+      img {
+        background: black;
+        padding: 30px 45px;
+      }
+    }
+  }
 }

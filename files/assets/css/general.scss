@@ -1,9 +1,36 @@
 body {
-
+  font-family: 'Raleway', sans-serif;
 }
 
-.header, .about-us {
+.header, .about-us,
+.services-block, .request,
+.privacy, .services-image {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+#container ::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.privacy {
+  p {
+    font: normal normal normal 26px/30px Raleway;
+    a {
+      color: #3c25b2;
+    }
+  }
+}
+
+
