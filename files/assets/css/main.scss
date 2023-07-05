@@ -1,3 +1,5 @@
+@import "variables";
+
 .banner_image {
   position: relative;
   z-index: 1;
@@ -68,14 +70,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #FF67B3;
+        background: $rosa;
         transition: background-color 250ms;
         img {
           width: 50px;
           transition: filter 250ms;
         }
         &:hover {
-          background-color: #3C25B2;
+          background-color: $blue;
         }
       }
     }
@@ -107,15 +109,31 @@
   .ce_image.left {
     position: absolute;
     top: 8vw;
-    background: #FF67B3;
+    background: $rosa;
     padding: 25px 25px;
   }
   .ce_image.right {
     top: 15vw;
     position: absolute;
     right: 0;
-    background: #FFB029;
+    /*background: #FFB029;*/
     padding: 25px 25px;
+    z-index: 0;
+    &:after {
+      background: #FFB029;
+      content: '';
+      display: block;
+      height: 100%;
+      width: 81%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(0%, 0);
+      transform-origin: top left;
+      transition: .2s transform ease-in-out, .2s color ease-in-out;
+      will-change: transform;
+      z-index: -1;
+    }
   }
 }
 
@@ -178,7 +196,7 @@
 }
 
 .bg-blue {
-  background: url("/files/assets/layout/Vereinigungsmenge 2-2.svg") center top 0/cover no-repeat;
+  background: url("/files/assets/layout/Vereinigungsmenge.svg") center top 0/cover no-repeat;
   z-index: 6;
   margin-top: 0;
   height: auto;
@@ -195,87 +213,9 @@
 }
 
 .request {
-/*  margin: 86px auto;*/
-  font: normal normal normal 25px/35px Raleway;
-  color: white;
-  .formbody {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .left {
-      width: 45%;
-      /*float: left;
-      margin-right: 10%;*/
-    }
-    .right {
-      width: 45%;
-      transform: translateY(80px);
-    }
-  }
-  .formbody .widget-text, .formbody .widget-textarea {
-    margin: 30px 0;
-    input, textarea {
-      width: 95%;
-      background-color: #00000026;
-      padding: 7px 12px;
-      outline: 0;
-      border: 0;
-      border-top: 5px solid black;
-      cursor: pointer;
-      color: white;
-    }
-  }
-  .formbody .widget-radio {
-    margin-left: -6px;
-    fieldset {
-      border: 0;
-      span {
-       input {
-          display: none;
-        }
-        label {
-          display: block;
-          margin: 18px 0;
-          strong {
-            font-size: 15px;
-            font-weight: normal;
-          }
-        }
-      }
-    }
-  }
+  padding: 100px 0;
 }
 
-.request .formbody input[type="radio"] + label span {
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  border: 2px solid #FF67B3;
-  border-radius: 100%;
-  float: left;
-  left: -20px;
-  position: relative;
-  top: 5px;
-}
-
-.request .formbody input[type="radio"]:checked + label span {
-  background-color: #ff0;
-}
-
-.request {
-  .widget.widget-submit {
-    text-align: right;
-    .submit {
-      padding: 10px 15px;
-      background-color: #ff0;
-      color: #3c25b2;
-      text-transform: uppercase;
-      cursor: pointer;
-      border: 0;
-      font: normal normal bolder 25px/35px Raleway;
-    }
-  }
-}
 
 
 

@@ -1,0 +1,85 @@
+@import "variables";
+
+.request-form {
+  /*  margin: 86px auto;*/
+  font: normal normal normal 25px/35px Raleway;
+  color: white;
+  .formbody {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .left {
+      width: 45%;
+      /*float: left;
+      margin-right: 10%;*/
+    }
+    .right {
+      width: 45%;
+      transform: translateY(80px);
+    }
+  }
+  .formbody .widget-text, .formbody .widget-textarea {
+    margin: 30px 0;
+    input, textarea {
+      width: 95%;
+      background-color: #00000026;
+      padding: 7px 12px;
+      outline: 0;
+      border: 0;
+      border-top: 5px solid black;
+      cursor: pointer;
+      color: white;
+    }
+  }
+  .formbody .widget-radio {
+    margin-left: -6px;
+    fieldset {
+      border: 0;
+      span {
+        input {
+          display: none;
+        }
+        label {
+          display: block;
+          margin: 18px 0;
+          strong {
+            font-size: 15px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+.request-form .formbody input[type="radio"] + label span {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: 2px solid $rosa;
+  border-radius: 100%;
+  float: left;
+  left: -14px;
+  position: relative;
+  top: 5px;
+}
+
+.request-form .formbody input[type="radio"]:checked + label span {
+  background-color: $yellow;
+}
+
+.request-form {
+  .widget.widget-submit {
+    text-align: right;
+  }
+}
+
+.gallery {
+  position: relative;
+  z-index: 5;
+  margin-top: -75px;
+  img {
+    width: 100%;
+  }
+
+}

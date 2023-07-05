@@ -1,0 +1,117 @@
+@import "variables";
+#footer {
+  z-index: 8;
+  height: auto;
+  position: relative;
+/*  background: $rosa;*/
+  background: url("/files/assets/layout/footer_bg.svg") center top 0/cover no-repeat;
+  .inside {
+    /*background: url("/files/assets/layout/footer_bg.svg") center top 0/cover no-repeat;
+    transform: translateY(-135px);*/
+    background: url("/files/assets/layout/Gruppe 215.svg") right 0/800px no-repeat;
+  }
+}
+
+.footer {
+  padding: 13vh 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font: normal normal 500 26px/36px Raleway;
+}
+
+.footer-left {
+  .logo-footer {
+    background: black;
+    padding: 30px 45px;
+    display: inline-block;
+    img {
+      width: 350px;
+    }
+  }
+  .ce_text {
+    color: $blue;
+    padding-left: 33px;
+    .location, .phone, .mail, .person {
+      position: relative;
+      padding-left: 33px;
+      &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 2px;
+        width: 33px;
+        height: 33px;
+      }
+    }
+    .location:before {
+      background: url("/files/assets/layout/location.svg") no-repeat;
+    }
+    .phone:before {
+      background: url("/files/assets/layout/telephone.svg") no-repeat;
+    }
+    .mail:before {
+      background: url("/files/assets/layout/at.svg") no-repeat;
+    }
+    .person:before {
+      background: url("/files/assets/layout/person.svg") no-repeat;
+    }
+  }
+}
+
+.footer-left {
+  .footer-middle {
+    p {
+      a {
+        color: $blue;
+        padding-left: 33px;
+        transition: color250ms;
+        &:hover {
+          color: $gelb;
+        }
+      }
+    }
+    width: 65%;
+    .footer-social-icons {
+      display: flex;
+      justify-content: space-evenly;
+      border-top: 3px solid white;
+      width: 100%;
+      padding-top: 20px;
+      .icon {
+        width: 80px;
+
+        a {
+          transition: filter 250ms;
+         &:hover {
+           filter: saturate(0) brightness(10);
+         }
+        }
+      }
+    }
+  }
+}
+
+.footer-right {
+  margin-top: 35%;
+  color: white;
+  .ce_text {
+    text-align: right;
+  }
+  .text-right {
+    p {
+      display: inline-block;
+      background-color: black;
+      &:after {
+        background-color: $blue;
+      }
+      a {
+        color: white;
+        transition: color 250ms;
+        &:hover {
+          color: $gelb;
+        }
+      }
+    }
+  }
+}
