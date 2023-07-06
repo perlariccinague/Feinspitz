@@ -13,7 +13,7 @@
 }
 
 .footer {
-  padding: 13vh 0 0;
+  padding: 200px 0 80px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -55,6 +55,9 @@
     }
     .person:before {
       background: url("/files/assets/layout/person.svg") no-repeat;
+    }
+    .mail {
+      margin-left: -33px;
     }
   }
 }

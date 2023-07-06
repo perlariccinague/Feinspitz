@@ -7,7 +7,7 @@ body {
 .header, .about-us,
 .services-block, .request,
 .privacy, .services-image,
-.footer {
+.footer, .navigation {
   width: 90%;
   max-width: $max-width;
   margin: 0 auto;
@@ -28,12 +28,24 @@ a {
 }
 
 .privacy {
+  margin: 50px auto;
   p {
     font: normal normal normal 26px/30px Raleway;
     a {
       color: #3c25b2;
+      transition: color 250ms;
+      &:hover {
+        color: $gelb;
+      }
     }
   }
+}
+
+h2 {
+  text-align: center;
+  font: normal normal normal 34px/40px Raleway;
+  color: $blue;
+  text-transform: uppercase;
 }
 
 .submit, .text-right p {

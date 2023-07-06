@@ -1,19 +1,55 @@
-/*gsap.registerPlugin(ScrollTrigger);*/
+gsap.registerPlugin(ScrollTrigger);
 
-gsap.to( ".services",{
-    x: 50,
-    duration: 5,
-    ease: "bounce",
-    repeat: -1
+
+gsap.from( ".services",{
+    x: -500,
+    duration: 2,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".services",
+        start: "top bottom",
+        end: "bottom bottom",
+        toggleActions: "restart none none restart"
+    }
 })
 
-/*gsap.to(".services", {
-        x: "45%",
+gsap.from(".equipment",{
+    x: 500,
+    duration: 2,
+    opacity: 0,
     scrollTrigger: {
-       /!* trigger: border.parentElement,*!/
-        start: 'top bottom',
-        end: 'center center',
-        back: 'end end',
-        scrub: true
+        trigger: ".equipment",
+        start: "top bottom",
+        end: "bottom bottom",
+        toggleActions: "restart none none restart"
     }
-})*/
+})
+
+gsap.from( ".ce_image.left",{
+    x: -500,
+    duration: 2,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".ce_image.left",
+        start: "top bottom",
+        end: "bottom bottom",
+        toggleActions: "restart none none restart"
+    }
+})
+
+gsap.from(".ce_image.right",{
+    x: 500,
+    duration: 2,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".ce_image.right",
+        start: "top bottom",
+        end: "bottom bottom",
+        toggleActions: "restart none none restart"
+    }
+})
+
+
+
+
+

@@ -1,3 +1,4 @@
+@import "variables";
 
 #header .inside {
   height: 0;
@@ -9,16 +10,50 @@
   justify-content: space-between;
   position: relative;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header-left {
   padding-top: 80px;
   .logo-header {
     a {
+      background: black;
+      padding: 35px 20px;
+      height: 100px;
+      display: flex;
       img {
-        background: black;
-        padding: 30px 45px;
+        width: 500px;
       }
     }
   }
+}
+
+.header-right {
+  .mod_mobile_menu {
+    img {
+      transition: filter 250ms;
+     &:hover {
+       filter: invert(1);
+     }
+    }
+  }
+}
+
+@media screen  and (max-width: 640px){
+ .header {
+   justify-content: center;
+   .header-left {
+     padding-top: 40px;
+     .logo-header a {
+       padding: 9px 20px;
+     }
+   }
+   .header-right {
+     .mobile_menu_trigger {
+       img{
+         width: 200px;
+       }
+     }
+   }
+ }
 }
