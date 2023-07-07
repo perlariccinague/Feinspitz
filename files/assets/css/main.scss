@@ -230,8 +230,57 @@
   img {
     width: 100%;
   }
-
 }
+
+@media screen  and (max-width: 640px) {
+  .banner_image .header-image {
+    img {
+      height: 100vh;
+      object-fit: cover;
+      object-position: 30% 0%;
+    }
+  }
+  .bg-yellow {
+    margin-top: -110px;
+    height: auto;
+    top: 0;
+  }
+  .about-us {
+    flex-wrap: wrap;
+    transform: translateY(0%);
+    text-align: right;
+    padding: 80px 0;
+    .ce_image, .ce_text {
+      width: 100%;
+    }
+    .ce_text {
+      font: normal normal normal 18px/28px Raleway;
+    }
+    .ce_image {
+      img {
+        width: 200px;
+      }
+    }
+  }
+  .slider-image {
+    margin-top: -48px;
+    margin-bottom: -22vw;
+  }
+  .ce_sliderStart.block {
+    .content-slider img {
+      height: 80vh;
+      object-fit: cover;
+    }
+  }
+  .bg-white {
+    margin-top: 0;
+    .services-image {
+      display: none;
+    }
+  }
+}
+
+
 
 
 
