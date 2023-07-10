@@ -10,7 +10,6 @@
   justify-content: space-between;
   position: relative;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .header-left {
@@ -42,6 +41,8 @@
 @media screen  and (max-width: 640px){
  .header {
    justify-content: center;
+   width: 100%;
+   flex-wrap: wrap;
    .header-left {
      padding-top: 40px;
      .logo-header a {
@@ -49,10 +50,13 @@
      }
    }
    .header-right {
-     transform: translateY(185px);
-     .mobile_menu_trigger {
-       img{
-         width: 200px;
+     transform: translateY(0);
+     .mod_mobile_menu.block {
+       transform: translateY(110px);
+       .mobile_menu_trigger {
+         img{
+           width: 200px;
+         }
        }
      }
    }

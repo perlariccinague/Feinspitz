@@ -74,7 +74,7 @@
         }
       }
     }
-    width: 65%;
+    width: 67%;
     .footer-social-icons {
       display: flex;
       justify-content: space-evenly;
@@ -114,6 +114,49 @@
         &:hover {
           color: $gelb;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #footer .inside {
+    background-size: 275px;
+  }
+  .footer {
+    font: normal normal 500 18px/24px Raleway;
+    padding-top: 230px;
+    padding-bottom: 50px;
+    .footer-left {
+      margin: 0 auto;
+      .logo-footer {
+        display: block;
+        background: none;
+        padding: 0;
+        margin-bottom: 20px;
+        img {
+          width: 265px;
+          filter: invert(1);
+        }
+      }
+      .footer-middle {
+        width: 100%;
+        .footer-social-icons {
+          justify-content: center;
+        }
+      }
+      .ce_text {
+        .location, .phone, .mail, .person {
+          &:before {
+            background-size: 20px;
+          }
+        }
+      }
+    }
+    .footer-right {
+      margin: 0 auto;
+      .ce_text {
+        text-align: center;
       }
     }
   }
