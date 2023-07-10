@@ -1,9 +1,10 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const duration = 1;
 
 gsap.from( ".services",{
     x: -500,
-    duration: 2,
+    duration: duration,
     opacity: 0,
     scrollTrigger: {
         trigger: ".services",
@@ -15,7 +16,7 @@ gsap.from( ".services",{
 
 gsap.from(".equipment",{
     x: 500,
-    duration: 2,
+    duration: duration,
     opacity: 0,
     scrollTrigger: {
         trigger: ".equipment",
@@ -27,7 +28,7 @@ gsap.from(".equipment",{
 
 gsap.from( ".ce_image.left",{
     x: -500,
-    duration: 2,
+    duration: duration,
     opacity: 0,
     scrollTrigger: {
         trigger: ".ce_image.left",
@@ -39,7 +40,7 @@ gsap.from( ".ce_image.left",{
 
 gsap.from(".ce_image.right",{
     x: 500,
-    duration: 2,
+    duration: duration,
     opacity: 0,
     scrollTrigger: {
         trigger: ".ce_image.right",

@@ -13,7 +13,6 @@
 }
 
 .header-left {
-  padding-top: 80px;
   .logo-header {
     a {
       background: black;
@@ -29,6 +28,7 @@
 
 .header-right {
   .mod_mobile_menu {
+    cursor: pointer;
     img {
       transition: filter 250ms;
      &:hover {

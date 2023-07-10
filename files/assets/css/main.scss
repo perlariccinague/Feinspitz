@@ -148,7 +148,7 @@
 .services-block {
   display: flex;
   justify-content: space-between;
-  padding: 100px 0;
+  padding: 100px 0 0;
   margin: 86px auto;
   position: relative;
   flex-wrap: wrap;
@@ -193,13 +193,11 @@
 
 .equipment {
   width: 50%;
-  left: -170px;
   position: relative;
   transform: translateY(50px);
   opacity: 1;
   .ce_text {
     li {
-      left: 25%;
       &:before {
         background: url("/files/assets/layout/check(1).svg") no-repeat 0/cover;
       }
@@ -246,6 +244,30 @@
   }
 }
 
+@media screen and (max-width: 1050px) {
+  .bg-blue .ce_image {
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .gallery {
+    margin-bottom: -14vw;
+  }
+  .services-image .ce_image.right {
+    top: 25vw;
+  }
+  .services-block {
+    padding-top: 200px;
+  }
+  .ce_sliderStart.block .content-slider img {
+    height: 75vh;
+    object-fit: cover;
+  }
+  .about-us .ce_text {
+    font: normal normal normal 23px/35px Raleway;
+  }
+}
+
 @media screen  and (max-width: 640px) {
   .banner_image .header-image {
     img {
@@ -282,7 +304,25 @@
   .ce_sliderStart.block {
     .content-slider img {
       height: 80vh;
-      object-fit: cover;
+    }
+    .slider-control {
+      top: 80%;
+      .slider-prev {
+        left: 25%;
+      }
+      .slider-next {
+        right: 25%;
+      }
+      .slider-prev, .slider-next {
+        transform: translateY(0);
+        .arrow-icon-left {
+          width: 64px;
+          height: 64px;
+          img {
+            height: 64px;
+          }
+        }
+      }
     }
   }
   .bg-white {

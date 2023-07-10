@@ -56,14 +56,19 @@
     .person:before {
       background: url("/files/assets/layout/person.svg") no-repeat;
     }
-    .mail {
+    .mail, .phone {
       margin-left: -33px;
     }
   }
 }
 
 .footer-left {
+  width: 50%;
   .footer-middle {
+    width: 67%;
+    .image {
+      display: none;
+    }
     p {
       a {
         color: $blue;
@@ -74,7 +79,6 @@
         }
       }
     }
-    width: 67%;
     .footer-social-icons {
       display: flex;
       justify-content: space-evenly;
@@ -96,6 +100,7 @@
 }
 
 .footer-right {
+  width: 50%;
   margin-top: 35%;
   color: white;
   .ce_text {
@@ -119,6 +124,23 @@
   }
 }
 
+.footer-middle .adress {
+  margin-top: -25px;
+}
+
+@media screen and (max-width: 1150px) {
+  #footer .inside {
+    background: url("/files/assets/layout/Gruppe 215.svg") right 0/350px no-repeat;
+  }
+  .footer {
+    font: normal normal 500 20px/36px Raleway;
+  }
+  .footer-left .footer-middle {
+    width: 100%;
+  }
+}
+
+
 @media screen and (max-width: 640px) {
   #footer .inside {
     background-size: 275px;
@@ -127,8 +149,8 @@
     font: normal normal 500 18px/24px Raleway;
     padding-top: 230px;
     padding-bottom: 50px;
+    text-align: center;
     .footer-left {
-      margin: 0 auto;
       .logo-footer {
         display: block;
         background: none;
@@ -141,6 +163,11 @@
       }
       .footer-middle {
         width: 100%;
+        .image {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+        }
         .footer-social-icons {
           justify-content: center;
         }
@@ -149,15 +176,37 @@
         .location, .phone, .mail, .person {
           &:before {
             background-size: 20px;
+            display: none;
           }
         }
       }
     }
     .footer-right {
-      margin: 0 auto;
       .ce_text {
         text-align: center;
       }
     }
+    .footer-left, .footer-right {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .footer-left .ce_text {
+    padding-left: 0;
+    .location, .phone, .mail, .person {
+      padding-left: 0;
+    }
+  }
+  .footer-left .footer-middle p a {
+    padding-left: 0;
+  }
+  .footer-left .ce_text {
+    .mail, .phone {
+      margin-left: 0;
+    }
+  }
+
+  .footer-middle .adress {
+    margin-top: -0;
   }
 }

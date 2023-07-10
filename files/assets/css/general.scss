@@ -88,3 +88,10 @@ html.mobile_menu_active {
   overflow-y: hidden;
 }
 
+@media screen and (max-width: 640px){
+  .privacy {
+    p {
+      font: normal normal normal 18px/28px Raleway;
+    }
+  }
+}

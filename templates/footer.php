@@ -2,9 +2,11 @@
     <div class="footer-left">
         {{insert_content::51}}
         <div class="footer-middle">
-        {{insert_content::54}}
-       <!--{{insert_content::56}}-->
-        {{insert_module::3}}
+            <img class="image" src="files/assets/layout/location.svg" alt="location">
+            {{insert_content::65}}
+            <img class="image" src="files/assets/layout/person.svg" alt="location">
+            {{insert_content::64}}
+            {{insert_module::3}}
         </div>
     </div>
     <div class="footer-right">
