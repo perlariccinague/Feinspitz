@@ -14,7 +14,7 @@
 }
 
 #about-us.bg-yellow {
-  height: 100vh;
+  height: 90vh;
   margin-top: -136px;
 }
 
@@ -35,7 +35,7 @@
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
-  top: 50%;
+  top: 35%;
   position: relative;
   .ce_image {
     width: 30%;
@@ -49,7 +49,7 @@
 .slider-image {
   position: relative;
   z-index: 3;
-  margin-top: -160px;
+  margin-top: -150px;
 }
 
 .ce_sliderStart.block {
@@ -266,6 +266,15 @@
   .about-us .ce_text {
     font: normal normal normal 23px/35px Raleway;
   }
+  .about-us {
+    top: 40%;
+  }
+}
+
+@media screen  and (max-width: 750px) {
+  .about-us {
+    top: 50%;
+  }
 }
 
 @media screen  and (max-width: 640px) {
@@ -273,11 +282,11 @@
     img {
       height: 100vh;
       object-fit: cover;
-      object-position: 30% 0%;
+      object-position: 30% 0;
     }
   }
-  .bg-yellow {
-    margin-top: -110px;
+  #about-us.bg-yellow {
+    margin-top: -150px;
     height: auto;
     top: 0;
   }
@@ -285,6 +294,8 @@
     flex-wrap: wrap;
     text-align: right;
     padding: 80px 0;
+    top: 50%;
+    transform: translateY(0);
     .ce_image, .ce_text {
       width: 100%;
     }
@@ -306,7 +317,7 @@
       height: 80vh;
     }
     .slider-control {
-      top: 80%;
+      top: 70%;
       .slider-prev {
         left: 25%;
       }
@@ -351,7 +362,6 @@
     margin: 50px 0 0;
     .ce_image {
       background: $rosa;
-      /*padding: 20px 45px 20px 15px;*/
     }
   }
   .equipment {

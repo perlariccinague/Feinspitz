@@ -44,15 +44,19 @@
    width: 100%;
    flex-wrap: wrap;
    .header-left {
-     padding-top: 40px;
+     width: 100%;
+     padding-top: 20px;
      .logo-header a {
-       padding: 9px 20px;
+       padding: 20px 20px;
+       img {
+         margin: 0 auto;
+       }
      }
    }
    .header-right {
      transform: translateY(0);
      .mod_mobile_menu.block {
-       transform: translateY(110px);
+       transform: translateY(80px);
        .mobile_menu_trigger {
          img{
            width: 200px;
